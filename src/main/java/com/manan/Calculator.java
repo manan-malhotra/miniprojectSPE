@@ -31,6 +31,12 @@ public class Calculator {
                     result = factorial(x);
                     System.out.println("Factorial is: " + result);
                     break;
+                case 3:
+                    System.out.println("Enter a number:");
+                    x = sc.nextInt();
+                    result = logNatural(x);
+                    System.out.println("Log is: " + result);
+                    break;
                 case 5:
                     System.out.println("Thank you! Goodbye!");
                     return;
@@ -48,5 +54,8 @@ public class Calculator {
             result*=i;
         }
     return result;
+    }
+    public static double logNatural(int x){
+        return Math.log(x);
     }
 }
