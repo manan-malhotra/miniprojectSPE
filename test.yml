@@ -1,0 +1,7 @@
+- hosts: localhost
+  tasks:
+      - name: Pull Docker image from Docker Hub
+        shell: docker pull manan80malhotra/miniproject
+
+      - name: Run Docker container
+        shell: docker run -it manan80malhotra/miniproject
